@@ -98,7 +98,6 @@ function init(config) {
                 endIndex
             } = getIndex(content, path);
             const indent = getIndent(content, startIndex0);
-            console.log('i', indent);
             snippet = setIndent(snippet, indent);
             const code = content.slice(0, startIndex) + snippet + content.slice(endIndex);
             if (code.length < 20) { //prevent loosing code
@@ -113,7 +112,6 @@ function init(config) {
                 stopWatchTimeout = setTimeout(function () {
                     stopWatch = false;
                 }, 1000);
-                console.log(err);
             });
 
         });
@@ -126,7 +124,6 @@ function init(config) {
             endIndex
         } = getIndex(content, path);
         const indent = getIndent(content, startIndex0);
-        console.log('indent', indent);
 
         let snippet = content.slice(startIndex, endIndex);
         if (snippet.match(/\S/)) {
