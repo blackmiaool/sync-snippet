@@ -6,6 +6,7 @@ function init(config) {
     const files = [];
     let stopWatch = false;
     let stopWatchTimeout;
+    let lastSnippet;
     fs.readFileAsync = function (filename) {
         return new Promise(function (resolve, reject) {
             fs.readFile(filename, function (err, data) {
@@ -31,11 +32,15 @@ function init(config) {
                     snippet
                 } = getSnippet(content, filename);
 
-                config.files.forEach(function (file) {
-                    if (file.path !== filename) {
-                        setSnippet(snippet, file.path);
-                    }
-                });
+                if (lastSnippet !== snippet) {
+                    config.files.forEach(function (file) {
+                        if (file.path !== filename) {
+                            setSnippet(snippet, file.path);
+                        }
+                    });
+                    lastSnippet = snippet;
+                }
+               
             });
 
         });
@@ -147,7 +152,7 @@ function init(config) {
         });
         let solidCnt = 0;
         let allSame = false;
-        let lastSnippet;
+        
         snippets.forEach(function (snippet) {
             if (snippet.match(/\S/)) {
                 solidCnt++;
