@@ -86,6 +86,9 @@ function init(config) {
             indent++;
         }
         indent--;
+        if(indent<0){
+            indent=0;
+        }
         return indent;
     }
 
