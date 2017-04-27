@@ -175,7 +175,7 @@ function init(config) {
         console.log('solidCnt', solidCnt);
 
         if (!solidCnt) {
-            console.log("nothing to sync");
+            console.log("All the marked areas are empty.");
         } else if (solidCnt === 1 || allSame) {
             console.log("start synchronizing...");
             snippets.forEach(function (snippet, i) {
@@ -184,7 +184,7 @@ function init(config) {
                 }
             });
         } else {
-            console.warn("can't start");
+            console.warn("Snippets are not synchronized. Any modification will synchronize them.");
         }
 
 

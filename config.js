@@ -3,13 +3,13 @@ module.exports = {
     regexp: /\/\/\/\/sync-code-snippet:(\w+):(\w+) */g, ////sync-code-snippet:ws:end
     files: [
         {
-            path: "/home/blackmiaool/a.js"
+            path: "./test/a.js"
         },
         {
-            path: "/home/blackmiaool/b.js"
+            path: "./test/b.js"
         },
         {
-            path: "/home/blackmiaool/c.js"
+            path: "./test/c.js"
         },
     ]
 }

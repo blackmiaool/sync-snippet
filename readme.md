@@ -90,7 +90,8 @@ Remember to make the snippet area and the *start mark* have same indent.
   ////sync-code-snippet:ws:end
 ```
 
-
+### How to test it?
+Clone the repo, run the **start.js** and try to edit the files in ./test folder.
 
 
 
