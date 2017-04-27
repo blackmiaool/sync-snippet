@@ -76,7 +76,7 @@ var a=1;
 ####  3.Try to edit the code in the snippet area and check the area in other files
 
 ### Does it support indent?
-Yes. It get the indent by calculating the spaces between the column0 and the *start mark* and synchronize the snippet area accordingly.
+Yes. It get the indentation by calculating the spaces between the column0 and the *start mark* and synchronize the snippet area accordingly.
 Remember to make the snippet area and the *start mark* have the same indent.
 
 **Wrong:**
