@@ -1,7 +1,8 @@
 # Synchronize Code Snippet Among Files
-
+[![NPM version][npm-image]][npm-url]
 ### How to use it?
 
+`npm i -D sync-snippet`
 #### 1.Invoke it in nodejs:
 
 ```javascript
@@ -94,4 +95,6 @@ Remember to make the snippet area and the *start mark* have the same indent.
 Clone the repo, run the **start.js** and try to edit the files in ./test folder.
 
 
+[npm-url]: https://npmjs.org/package/sync-snippet
+[npm-image]: http://img.shields.io/npm/v/sync-snippet.svg
 
