@@ -5,29 +5,7 @@
 
 `npm i -D sync-snippet`
 
-#### 1.Invoke it in nodejs:
-
-```javascript
-const sync = require("sync-snippet")
-
-sync({
-    name: "ws", //should be unique in this pc
-    regexp: /\/\/\/\/sync-code-snippet:(\w+):(\w+) */g, //likethis:  ////sync-code-snippet:ws:end
-    files: [
-        {
-            path: "/home/blackmiaool/a.js"
-        },
-        {
-            path: "/home/blackmiaool/b.js"
-        },
-        {
-            path: "/home/blackmiaool/c.js"
-        },
-    ]
-});
-```
-
-#### 2.Use `////sync-code-snippet:ws:start` and `////sync-code-snippet:ws:end` to mark snippet area in files.
+#### 1.Use `////sync-code-snippet:ws:start` and `////sync-code-snippet:ws:end` to mark snippet area in files.
 
 
 Before:
@@ -72,6 +50,31 @@ var a=1;
 var a=1;
 ////sync-code-snippet:ws:end
 ```
+
+
+#### 2.Invoke it in nodejs:
+
+```javascript
+const sync = require("sync-snippet")
+
+sync({
+    name: "ws", //should be unique in this pc
+    regexp: /\/\/\/\/sync-code-snippet:(\w+):(\w+) */g, //should be like this:  ////sync-code-snippet:ws:end
+    files: [
+        {
+            path: "/home/blackmiaool/a.js"
+        },
+        {
+            path: "/home/blackmiaool/b.js"
+        },
+        {
+            path: "/home/blackmiaool/c.js"
+        },
+    ]
+});
+```
+
+
 
 ####  3.Try to edit the code in the snippet area and check the area in other files
 
