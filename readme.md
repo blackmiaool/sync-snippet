@@ -1,6 +1,6 @@
 # sync-snippet
 
-Synchronize Code Snippet Among Files
+Synchronize code snippet among files.
 
 [![NPM version][npm-image]][npm-url]
 
