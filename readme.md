@@ -1,4 +1,7 @@
-# Synchronize Code Snippet Among Files
+# sync-snippet
+
+Synchronize Code Snippet Among Files
+
 [![NPM version][npm-image]][npm-url]
 
 ### How to use it?
