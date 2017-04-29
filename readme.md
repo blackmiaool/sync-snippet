@@ -10,9 +10,6 @@ Synchronize code snippet among files.
 
 #### 1.Use `////sync-code-snippet:ws:start` and `////sync-code-snippet:ws:end` to mark snippet area in files.
 
-
-Before:
-
 **a.js**:
 ```javascript
 ////sync-code-snippet:ws:start
@@ -30,30 +27,6 @@ var a=1;
 ////sync-code-snippet:ws:start
 ////sync-code-snippet:ws:end
 ```
-
-After:
-
-
-**a.js**:
-```javascript
-////sync-code-snippet:ws:start
-var a=1;
-////sync-code-snippet:ws:end
-```
-**b.js**:
-```javascript
-////sync-code-snippet:ws:start
-var a=1;
-////sync-code-snippet:ws:end
-```
-
-**c.js**:
-```javascript
-////sync-code-snippet:ws:start
-var a=1;
-////sync-code-snippet:ws:end
-```
-
 
 #### 2.Invoke it in nodejs:
 
